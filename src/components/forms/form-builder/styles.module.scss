@@ -1,0 +1,18 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.parent {
+  margin-top: -30px;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 62px;
+    h4 {
+      @include main-heading;
+    }
+    .text {
+      padding-left: 12px;
+    }
+  }
+}

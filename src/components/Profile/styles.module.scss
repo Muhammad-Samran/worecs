@@ -1,0 +1,83 @@
+@import "../../styles/theme/variables";
+@import "../../styles/theme/mixins";
+
+.parent {
+  // padding-left: 40px;
+  padding-right: 150px;
+  @media screen and (max-width: 992px) {
+    padding: 0 44px;
+  }
+  .preview {
+    position: relative;
+    max-width: 350px;
+    svg {
+      position: absolute;
+      right: -20px;
+      top: -10px;
+      cursor: pointer;
+    }
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+    }
+  }
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      @include main-heading;
+    }
+    .button {
+      margin: 0;
+      button {
+        margin-top: 0;
+      }
+    }
+  }
+  .textFeilds {
+    h5 {
+      font-family: "poppins-bold";
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 22px;
+      /* or 120% */
+
+      color: #000000;
+    }
+
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    &.botom {
+      .input {
+        margin-bottom: 10px;
+      }
+      .imageUpload {
+        max-width: 72px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        img {
+          cursor: pointer;
+        }
+        & > input {
+          display: none;
+        }
+      }
+    }
+    .input {
+      max-width: 315px !important;
+      margin-top: 0;
+      input {
+        min-height: 41px;
+        padding: 10px 16px;
+      }
+    }
+  }
+}

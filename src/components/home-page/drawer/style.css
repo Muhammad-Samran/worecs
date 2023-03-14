@@ -1,0 +1,13 @@
+.nav_toggle_btn{
+    background-color: #00CFC5 !important;
+}
+.nav_link_home_mobile{
+    display: flex;
+    flex-direction: column;
+    color: #00CFC5;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.nav_link_home_mobile_btns{
+    padding: 10px 5px;
+}

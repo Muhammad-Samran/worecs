@@ -1,0 +1,57 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.parent {
+  .head {
+    margin-bottom: 10px;
+    h4 {
+      @include main-heading;
+      @media screen and (max-width: 600px) {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .buttonWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .button {
+      margin: 0 0 0 auto;
+      max-width: 100%;
+      svg {
+        margin-right: 5px;
+      }
+      @media screen and (max-width: 575px) {
+        margin: auto;
+      }
+      button {
+        text-transform: capitalize;
+        margin-top: 0;
+        font-family: "poppins-regular";
+
+        &:nth-child(2) {
+          margin-top: 17px;
+          background-color: transparent;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  .buttonTabs {
+    margin-top: 50px;
+    button {
+      font-family: "poppins-semi-bold";
+      font-style: normal;
+
+      font-size: 16px;
+      text-transform: capitalize;
+      line-height: 24px;
+      letter-spacing: 0.025em;
+      color: $black-color;
+      margin-right: 50px;
+    }
+  }
+}

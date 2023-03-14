@@ -1,0 +1,136 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.parent {
+  .header {
+    h4 {
+      @include main-heading;
+    }
+    p {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 882px;
+      margin-top: 49px;
+      letter-spacing: 0.025em;
+      color: #6c6a6a;
+    }
+  }
+  .contentBox {
+    margin-top: 52px;
+    max-width: 680px;
+    margin-bottom: 60px;
+    @media screen and (max-width: 992px) {
+      max-width: 100%;
+      min-width: 100%;
+    }
+    h5 {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 25px;
+      /* or 100% */
+
+      color: $black-color;
+    }
+    .inputBox {
+      margin-left: 48px;
+      p {
+        font-family: "poppins-regular";
+        font-style: normal;
+
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 24px;
+        /* or 120% */
+
+        color: #6c6a6a;
+      }
+      .input {
+        // max-width: 315px !important;
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+          min-width: 100%;
+        }
+        input {
+          background: #ffffff;
+          border: 1px solid #afafaf;
+          border-radius: 3px;
+          margin-left: 10px;
+        }
+      }
+      .button {
+        margin: 0;
+        margin-left: aut;
+      }
+    }
+  }
+  .formsSection {
+    h5 {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 18px;
+      /* or 100% */
+
+      color: $black-color;
+    }
+    .gridBox {
+      .input2 {
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+          min-width: 100%;
+        }
+        input {
+          background: #ffffff;
+          border: 1px solid #afafaf;
+          border-radius: 3px;
+
+          padding: 10px;
+          min-height: 30px;
+        }
+      }
+      .select {
+        margin: 0;
+        margin-top: 19px;
+        max-width: 100% !important;
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+        }
+      }
+    }
+    .button {
+      margin: 0;
+      margin-top: 40px;
+      // margin-right: 100px;
+      @media screen and (max-width: 992px) {
+        margin-right: 0;
+      }
+      margin-left: auto;
+    }
+  }
+  .parentInput {
+    position: relative;
+    span {
+      display: block;
+      position: absolute;
+      left: 3px;
+      color: $red-color;
+      font-family: "poppins-semi-bold";
+      font-size: 12px;
+    }
+  }
+}
+.input {
+  // max-width: 350px;
+  @media screen and (max-width: 992px) {
+    max-width: 100% !important;
+    min-width: 100% !important;
+  }
+}

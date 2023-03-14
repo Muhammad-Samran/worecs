@@ -1,0 +1,115 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.parent {
+  h4 {
+    @include main-heading;
+  }
+
+  .gridSystem {
+    margin: 47px 0;
+
+    .boxName {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 197px;
+      background: $white-color;
+      cursor: pointer;
+      border: 1px solid #afafaf;
+      border-radius: 8px;
+      position: relative;
+      &.activeBox {
+        border: 3px solid $primary-color;
+      }
+      .hoverDelete {
+        font-size: 12px;
+        position: absolute;
+        right: 10px;
+        max-width: 20px;
+        top: 10px;
+        display: none;
+      }
+      .hoverEdit {
+        font-size: 12px;
+        position: absolute;
+        right: 30px;
+        max-width: 20px;
+        top: 10px;
+        display: none;
+      }
+      .statusCircle {
+        font-size: 12px;
+        position: absolute;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        top: 10px;
+
+        span {
+          margin-left: 3px;
+        }
+        svg {
+          margin-left: 3px;
+        }
+      }
+      &:hover {
+        transition: 0.7s;
+        // background-image: url("../../images/PPC/hover.png");
+        transform: scale(1.01);
+        box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.1);
+        .hoverDelete {
+          display: block;
+        }
+        .hoverEdit {
+          display: block;
+        }
+      }
+      .imageBox {
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        width: 90px;
+        justify-content: center;
+        background: #f3f3f3;
+        border-radius: 50%;
+        margin-bottom: 12px;
+        img {
+          max-width: 46px;
+        }
+      }
+      h4 {
+        font-family: "poppins-light";
+        font-style: normal;
+        // font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        color: $black-color;
+      }
+    }
+  }
+  .contactUs {
+    a {
+      color: #00cfc5;
+    }
+  }
+  .createOwn {
+    margin-top: 10px;
+    p {
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.025em;
+      display: block;
+      margin: 26px 0;
+      color: $black-color;
+    }
+    .button {
+      margin: 0;
+    }
+  }
+}

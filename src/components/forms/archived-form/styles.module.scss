@@ -1,0 +1,53 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.parent {
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+      .buttonGroup {
+        order: 1;
+        width: 100%;
+      }
+      h4 {
+        margin-top: 40px;
+        order: 2;
+      }
+    }
+    h4 {
+      @include main-heading;
+    }
+    .buttonGroup {
+      .button {
+        max-width: 100%;
+        svg {
+          margin-right: 5px;
+        }
+        button {
+          text-transform: capitalize;
+          margin-top: 0;
+          font-family: "poppins-regular";
+        }
+      }
+    }
+  }
+  .buttonTabs {
+    button {
+      font-family: "poppins-bold";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: capitalize;
+      line-height: 24px;
+      /* identical to box height */
+
+      letter-spacing: 0.025em;
+
+      color: $black-color;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.parent {
+  .header {
+    h4 {
+      @include main-heading;
+    }
+  }
+  .contactUs {
+    margin-top: 23px;
+    .contactUsHeader {
+      h5 {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+
+        font-size: 20px;
+        line-height: 24px;
+        color: $black-color;
+      }
+      p {
+        margin-top: 10px;
+
+        font-size: 14px;
+      }
+    }
+    .contactUsContent {
+      .lastInpGrid {
+        @media (max-width: 1200px) {
+          padding-top: 0;
+        }
+      }
+      .select {
+        min-width: 100%;
+      }
+      .contactusInp {
+        min-width: unset;
+        input {
+          border: 2px solid #898989;
+          border-radius: 6px;
+        }
+        textarea {
+          border: 2px solid #898989;
+          border-radius: 6px;
+        }
+      }
+      .btnSend {
+        margin: 25px auto;
+
+        font-size: 12px;
+      }
+      .rightContent {
+        margin-bottom: 50px;
+        @media screen and (min-width: 992px) {
+          padding-left: 50px;
+        }
+        h6 {
+          font-family: "poppins-regular";
+
+          font-size: 20px;
+        }
+        p {
+          font-family: "poppins-light";
+          max-width: 400px;
+
+          font-size: 15px;
+        }
+        a {
+          color: $primary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

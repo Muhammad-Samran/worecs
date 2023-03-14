@@ -1,0 +1,30 @@
+@import "../../../styles/theme/variables";
+
+.parentxy {
+  padding: 30px;
+  @media screen and (min-width: 992px) {
+    min-width: 500px;
+  }
+  h3 {
+    font-family: "poppins-regular";
+    font-style: normal;
+    //   font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 200% */
+
+    color: $black-color;
+  }
+  .buttondelete {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    min-width: 100%;
+    button {
+      max-width: 100px;
+      margin-right: 10px;
+    }
+  }
+}

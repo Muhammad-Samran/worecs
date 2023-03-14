@@ -1,0 +1,192 @@
+.leftBox {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 508px;
+  margin: auto;
+}
+@media screen and (max-width: 1280px) and (min-width: 900px) {
+  .leftBox {
+    padding-right: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .leftBox {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    min-height: 100%;
+  }
+}
+.leftBox h2 {
+  font-family: "poppins-bold";
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  /* identical to box height, or 99% */
+  color: #000000;
+  text-align: center;
+}
+.leftBox h2 span {
+  color: #00CFC5;
+}
+.leftBox h3 {
+  font-family: "poppins-light";
+  font-style: normal;
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 27px;
+  /* or 135% */
+  text-align: center;
+  color: #828181;
+}
+.leftBox .formsBox {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 31px;
+  max-width: 350px;
+  flex-direction: column;
+}
+.leftBox .formsBox .formInput {
+  min-width: 350px;
+  margin-top: 19px;
+  position: relative;
+}
+.leftBox .formsBox .formInput label {
+  font-family: "poppins-light";
+  font-style: normal;
+  font-size: 15px;
+  line-height: 22px;
+  /* identical to box height */
+  display: block;
+  letter-spacing: 0.025em;
+  color: #000000;
+  margin-bottom: 4px;
+}
+.leftBox .formsBox .formInput input {
+  background: #FFFFFF;
+  border: 1px solid #afafaf;
+  border-radius: 3px;
+  width: 100%;
+  min-height: 50px;
+  font-family: "poppins-light";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  padding: 17px 33px;
+  letter-spacing: 0.025em;
+  color: #9A9696;
+}
+.leftBox .formsBox .formInput input:focus-visible {
+  outline: #00CFC5 auto 1px;
+}
+.leftBox .formsBox .formInput input::-moz-placeholder {
+  font-family: "poppins-light";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0.025em;
+  color: #9A9696;
+}
+.leftBox .formsBox .formInput input:-ms-input-placeholder {
+  font-family: "poppins-light";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0.025em;
+  color: #9A9696;
+}
+.leftBox .formsBox .formInput input::placeholder {
+  font-family: "poppins-light";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0.025em;
+  color: #9A9696;
+}
+.leftBox .formsBox .formInput .showPass {
+  position: absolute;
+  right: 16px;
+  top: 45px;
+  cursor: pointer;
+}
+.leftBox .formsBox .formInput .showPass svg {
+  color: #00CFC5;
+}
+.leftBox .formsBox .forget {
+  max-width: 127px;
+  margin-left: auto;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.leftBox .formsBox .forget a {
+  font-family: "poppins-semi-bold";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  color: #9A9696;
+}
+.leftBox .formsBox .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 23px;
+}
+.leftBox .formsBox .bottom h5 {
+  font-family: "poppins-regular";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.025em;
+  color: #9A9696;
+}
+.leftBox .formsBox .bottom a {
+  margin-left: 27px;
+  font-family: "poppins-bold";
+  font-style: normal;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.025em;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #00CFC5;
+}
+.leftBox .formsBox .button {
+  min-width: 132px;
+  max-width: 132px;
+  margin: auto;
+}
+.leftBox .formsBox .button button {
+  background: #00CFC5;
+  margin-top: 20px;
+  border-radius: 3px;
+  min-height: 41px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "poppins-semi-bold";
+  font-style: normal;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.025em;
+  color: #FFFFFF;
+}
+.leftBox .parentInput {
+  position: relative;
+}
+.leftBox .parentInput span {
+  position: absolute;
+  left: 3px;
+  display: block;
+  color: #FD8383;
+  font-family: "poppins-semi-bold";
+  font-size: 12px;
+}/*# sourceMappingURL=styles.module.css.map */

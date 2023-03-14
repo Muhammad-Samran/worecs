@@ -1,0 +1,9 @@
+@import "../../../styles/theme/variables";
+.gridParrent {
+  padding: 74px 62px;
+
+  @media screen and (max-width: 768px) {
+padding: 30px 16px;  
+}
+
+}

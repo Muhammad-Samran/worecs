@@ -1,0 +1,147 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.parent {
+  .header {
+    h4 {
+      @include main-heading;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .faq {
+    margin-top: 23px;
+    .faqHeader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+      h5 {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+
+        color: $black-color;
+        margin-bottom: 16px;
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+      .searchBox {
+        display: flex;
+        align-items: center;
+        background: #fafafa;
+        min-width: 277px;
+        border-radius: 3px;
+        min-height: 44px;
+        padding: 10px 15px;
+        @media screen and (max-width: 600px) {
+          margin: 12px 0;
+        }
+        svg {
+          margin-right: 10px;
+          color: #757575;
+        }
+        input {
+          font-family: "poppins-regular";
+          font-style: normal;
+
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+          border: none;
+          box-shadow: none;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.2px;
+          background: transparent;
+          /* systemGrey/600 */
+
+          color: #757575;
+          &:focus-visible {
+            outline: none;
+          }
+          &::placeholder {
+            font-family: "poppins-regular";
+            font-style: normal;
+
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2px;
+            background: transparent;
+            /* systemGrey/600 */
+
+            color: #757575;
+          }
+        }
+      }
+    }
+    .faqContent {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        font-size: 14px;
+      }
+      a {
+        font-size: 14px;
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    .cardContainer {
+      margin-top: 30px;
+    }
+    .supportSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 55px;
+      .supportImages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .centerImg {
+          z-index: 1;
+        }
+        .leftImg {
+          margin-right: -20px;
+          z-index: 0;
+        }
+        .rightImg {
+          margin-left: -20px;
+          z-index: 0;
+        }
+      }
+      .supportContent {
+        margin: 33px auto;
+        text-align: center;
+        h6 {
+          font-size: 16px;
+          color: $black-color;
+        }
+        p {
+          font-size: 14px;
+          color: #898989;
+        }
+        .btnContact {
+          margin-top: 10px;
+
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

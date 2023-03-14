@@ -1,0 +1,37 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.innerContent {
+  margin-top: 25px !important;
+  max-width: 462px;
+  margin: auto;
+  padding-bottom: 30px;
+  .buttonNext {
+    @include next_button;
+  }
+  h3 {
+    @include heading_signup;
+  }
+
+  p {
+    margin-top: 9px;
+    @include description_signup;
+  }
+  .parentInput {
+    position: relative;
+    .input {
+      min-width: 100% !important;
+      label {
+        font-family: "poppins-regular";
+      }
+    }
+    span {
+      position: absolute;
+      left: 3px;
+      display: block;
+      color: $red-color;
+      font-family: "poppins-semi-bold";
+      font-size: 12px;
+    }
+  }
+}

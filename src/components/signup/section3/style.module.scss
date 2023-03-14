@@ -1,0 +1,65 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.innerContent {
+  margin-top: 25px !important;
+  max-width: 462px;
+  margin: auto;
+  padding-bottom: 30px;
+  h3 {
+    @include heading_signup;
+  }
+
+  p {
+    margin-top: 9px;
+    @include description_signup;
+  }
+
+  .input {
+    min-width: 100% !important;
+  }
+
+  .customCheckBox {
+    display: flex;
+    align-items: center;
+    .circle {
+      max-width: 24px;
+      width: 100%;
+      min-height: 24px;
+      margin-right: 15px;
+      border-radius: 50%;
+      position: relative;
+      cursor: pointer;
+      border: 2px solid $primary-color;
+      &.active {
+        padding: 5px;
+        &::after {
+          content: "";
+          width: 15px;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          height: 15px;
+          background-color: $primary-color;
+          border-radius: 50%;
+        }
+      }
+    }
+    .text {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 15px;
+      line-height: 22px;
+      /* identical to box height */
+
+      letter-spacing: 0.025em;
+
+      color: $black-color;
+    }
+  }
+
+  // .active
+  // .text
+}

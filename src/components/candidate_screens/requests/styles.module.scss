@@ -1,0 +1,44 @@
+@import "../../../styles/theme/variables";
+.parent {
+  h4 {
+    font-family: "poppins-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 24px;
+    color: $black-color;
+  }
+  .customBox {
+    margin-top: 30px;
+    table {
+      box-shadow: none;
+    }
+    .contentBox {
+      td {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 24px;
+        box-shadow: none;
+        color: #6c6a6a;
+        &.link {
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+    .headingBox {
+      th {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        color: #92929d;
+      }
+    }
+  }
+}

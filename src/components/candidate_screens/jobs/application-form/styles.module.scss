@@ -1,0 +1,21 @@
+@import "../../../../styles/theme/variables";
+.parent {
+  h4 {
+    font-family: "poppins-bold";
+    font-style: normal;
+
+    font-size: 28px;
+    line-height: 24px;
+    /* identical to box height, or 75% */
+    color: $black-color;
+  }
+  p {
+    max-width: 335px;
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #909090;
+    margin: 30px 0 20px;
+  }
+}

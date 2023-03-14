@@ -1,0 +1,256 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.parent {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      h4 {
+        margin-bottom: 16px;
+      }
+    }
+    h4 {
+      @include main-heading;
+    }
+    .searchBox {
+      display: flex;
+      align-items: center;
+      background: #fafafa;
+      min-width: 277px;
+      border-radius: 3px;
+      min-height: 44px;
+      padding: 10px 15px;
+      svg {
+        margin-right: 10px;
+        color: #757575;
+      }
+      input {
+        font-family: "poppins-regular";
+        font-style: normal;
+
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        border: none;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+        background: transparent;
+        /* systemGrey/600 */
+
+        color: #757575;
+        &:focus-visible {
+          outline: none;
+        }
+        &::placeholder {
+          font-family: "poppins-regular";
+          font-style: normal;
+
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.2px;
+          background: transparent;
+          /* systemGrey/600 */
+
+          color: #757575;
+        }
+      }
+    }
+  }
+  h5 {
+    margin-top: 10px;
+    font-family: "poppins-light";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #92929d;
+  }
+  .candidateTable {
+    margin-top: 46px;
+    h5 {
+      font-family: "poppins-semi-bold";
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height, or 120% */
+
+      color: $black-color;
+      margin-bottom: 16px;
+    }
+    .boxTable {
+      background: #ffffff;
+      border: 1px solid #979797;
+      border-radius: 10px;
+      overflow-x: scroll;
+      .rowHead {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 20px 10px;
+        border-bottom: 0.5px solid #afafaf;
+        &:last-child {
+          border-bottom: 0;
+        }
+        @media screen and (max-width: 575px) {
+          border-bottom: 0;
+        }
+
+        .rowBody {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+          /* identical to box height */
+
+          letter-spacing: 0.025em;
+
+          color: #000000;
+          flex: 0 0 20%;
+          @media screen and (max-width: 575px) {
+            flex: 0 0 50%;
+          }
+          &:first-child {
+            flex: 0 0 40%;
+            @media screen and (max-width: 575px) {
+              flex: 0 0 60%;
+            }
+          }
+        }
+      }
+      .rowrow {
+        .rowBody {
+          font-family: "poppins-regular";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+    .boxTable2 {
+      background: #ffffff;
+
+      border: 1px solid #979797;
+      border-radius: 10px;
+      .rowHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 10px;
+        border-bottom: 0.5px solid #afafaf;
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .rowBody {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+          /* identical to box height */
+
+          letter-spacing: 0.025em;
+
+          color: #000000;
+        }
+      }
+      .rowrow {
+        .rowBody {
+          font-family: "poppins-regular";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+    .boxTable3 {
+      background: #ffffff;
+      border: 1px solid #979797;
+      border-radius: 10px;
+      .rowHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 10px;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .rowBody {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+          /* identical to box height */
+
+          letter-spacing: 0.025em;
+
+          color: #000000;
+        }
+      }
+      .rowrow {
+        .rowBody {
+          font-family: "poppins-regular";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+        }
+      }
+    }
+    .boxTable4 {
+      background: #ffffff;
+      border: 1px solid #979797;
+      border-radius: 10px;
+      .rowHead {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .rowBody {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          font-weight: 500;
+
+          font-size: 16px;
+          line-height: 30px;
+          /* identical to box height */
+
+          letter-spacing: 0.025em;
+
+          color: #000000;
+        }
+      }
+      .rowrow {
+        .rowBody {
+          font-family: "poppins-regular";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}

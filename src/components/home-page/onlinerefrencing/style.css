@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,700&display=swap');
+.icon_thre_heading{
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+}
+.refrencing_heading{
+    font-family: 'Poppins' !important;
+    font-weight: 700 !important;
+        font-style: normal !important;
+        font-size: 28px !important;
+        line-height: 24px !important;
+        color: #000000 !important;
+}
+.refrencing_heading_paragraph{
+    font-family: 'Poppins' !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    font-size: 16px !important;
+    line-height: 30px;
+    color: #757575;
+}
+.refrencing_heading_bold{
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    line-height: 24px !important;
+    color: #00CFC5 !important;
+    text-decoration: underline;
+}
+.content_three_para_heading{
+    font-family: 'Poppins' !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #000000 !important;
+}
+.content_three_para_paragraph{
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    line-height: 30px !important;
+    color: #757575;
+}
+.online_refrencing_cards{
+    /* border: 2px solid #00CFC5; */
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+
+}
+.card_one{
+    height: 100%;
+    width: 100% !important;
+
+    /* border-radius: 10px; */
+}
+.content_three_para_box{
+    /* width: 320px; */
+    padding-left: 10px;
+}
+@media only screen and (max-width: 440px) {
+    .refrencing_heading ,.refrencing_heading_bold{
+      font-size: 19px !important;
+    }
+    .content_three_para_heading{
+        font-size: 17px !important;
+    }
+    .refrencing_heading_paragraph , .content_three_para_paragraph{
+        font-size: 16px !important;
+    }
+  }

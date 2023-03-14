@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,700&display=swap');
+.contentseven_maingrid{
+    display: flex;
+    justify-content: center;
+    
+}
+.resource_heading_h4 {
+    font-family: 'Poppins' !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    line-height: 24px !important;
+    color: #000000 !important;
+   
+}
+.resource_heading_bold {
+    font-family: 'Poppins'!important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    line-height: 24px !important;
+    color: #00CFC5 !important;
+    text-decoration: underline !important;
+    
+}
+.contentseven_mainbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contentseven_maincard{
+    /* padding: 10px; */
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.contentseven_maincard:hover{
+    border: 2px solid #00cfc5;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.5s ease-out;
+}
+/* .contentseven_maincard:hover{
+    padding: 35px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 2s ease !important;
+    border: none;
+} */
+.contentseven_imgbox{
+    position: relative;
+}
+.contentseven_cardimg{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+.contentseven_cardbox{
+    position: absolute;
+    top: 93%;
+    right: 0;
+}
+.resource_learn_heading_h6{
+
+    font-family: 'Poppins'!important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: #00CFC5;
+}
+.resource_learn_heading_para{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins' !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    font-size: 16px !important;
+    line-height: 30px;
+    color: #757575 !important;
+    overflow: hidden;
+    max-height: 87px;
+    height: auto;
+}
+.contentseven_cardbtn{
+    
+    background-color: #00CFC5 !important;
+    width: 150px;
+}
+.contentseven_cardbtn:hover{
+    background-color: #00CFC5 !important;
+}
+.contentseven_cardbtn2_box{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.contentseven_cardbtn2{
+    border: none !important;
+    color: #000000 !important;
+    /* color: #00CFC5 !important; */
+}
+
+.contentseven_cardbtn2:hover{
+    background-color: white !important;
+    text-decoration: underline !important;
+    color: #00CFC5 !important;
+    text-decoration: underline;
+}
+.contentseven_cardbtn2_icons{
+    font-size: 28px;
+    color: #00CFC5;
+    margin-left: 5px;
+}
+.learn_article_btn_box{
+    display: flex;
+    justify-content: center;
+}
+.learn_article_btn{
+    background-color: #00CFC5 !important;
+}
+@media only screen and (max-width: 440px) {
+    .resource_heading_h4 , .resource_heading_bold
+    {
+      font-size: 19px !important;
+    }
+    .resource_learn_heading_h6{
+        font-size: 17px !important;
+    }
+    .resource_learn_heading_para{
+        font-size: 16px;
+    }
+    .learn_article_btn{
+        width: 160px;
+    }
+  }

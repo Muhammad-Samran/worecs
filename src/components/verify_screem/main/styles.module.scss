@@ -1,0 +1,70 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+
+.mainHead {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  .content {
+    h2 {
+      @include heading_h2;
+      span {
+        color: $primary-color;
+      }
+    }
+    h3 {
+      @include heading_signup;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      /* identical to box height */
+    }
+    p {
+      @include description_signup;
+
+      max-width: 509px;
+
+      margin-bottom: 20px;
+    }
+
+    .parentInput {
+      position: relative;
+      margin-bottom: 25px;
+
+      .input {
+        margin: auto;
+        @media screen and (max-width: 992px) {
+          min-width: 100%;
+        }
+
+        label {
+          font-family: "poppins-regular";
+        }
+      }
+      span {
+        display: block;
+        position: absolute;
+        left: 3px;
+        color: $red-color;
+        font-family: "poppins-semi-bold";
+        font-size: 12px;
+      }
+    }
+  }
+  .buttonNext {
+    @include prev_button;
+  }
+}
+.input {
+  @media screen and (max-width: 992px) {
+    min-width: 100%;
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  max-width: 200px !important;
+  column-gap: 20px;
+}

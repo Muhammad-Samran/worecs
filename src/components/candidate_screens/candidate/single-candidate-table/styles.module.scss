@@ -1,0 +1,67 @@
+@import "../../../../styles/theme/variables";
+.candidateTable {
+  margin-top: 20px;
+  .customBox {
+    table {
+      box-shadow: none;
+    }
+    .contentBox {
+      td {
+        font-family: "poppins-light";
+        font-style: normal;
+
+        font-size: 14px;
+        cursor: pointer;
+        text-align: left;
+        line-height: 21px;
+        /* identical to box height */
+
+        color: $black-color;
+      }
+    }
+    .headingBox {
+      th {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+        /* identical to box height, or 215% */
+
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+
+        color: #92929d;
+      }
+    }
+  }
+  .addTabel {
+    font-family: "poppins-regular";
+    font-style: normal;
+
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+    text-decoration-line: underline;
+    svg {
+      margin-right: 10px;
+    }
+    color: $primary-color;
+  }
+  .actionsBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    svg {
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

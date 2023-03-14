@@ -1,0 +1,237 @@
+@import "../../styles/theme/variables";
+
+.sidebar {
+  max-width: 282px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $white-color;
+  z-index: 999;
+  padding: 34px;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  @media screen and (max-width: 992px) {
+    max-width: 62px;
+    background: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+
+    // overflow-x: hidden;
+  }
+  .boxContent {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .imageBox {
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 992px) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .imageContainer {
+        max-width: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        max-height: 70px;
+        width: 100%;
+        margin-right: 16px;
+
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        outline: 2px solid $primary-color;
+        &:hover {
+          .uploadIcon {
+            display: block;
+          }
+        }
+        @media screen and (max-width: 992px) {
+          max-width: 40px;
+          min-width: 40px;
+          min-height: 40px;
+          max-height: 40px;
+          margin-right: 0;
+          width: auto;
+        }
+      }
+      img {
+        max-width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+
+        display: block;
+        width: 100%;
+        top: 0;
+
+        object-fit: cover;
+      }
+      h5 {
+        font-family: "poppins-light";
+        font-style: normal;
+
+        font-size: 12px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+
+        color: #999999;
+      }
+      h4 {
+        font-family: "poppins-light";
+        font-style: normal;
+
+        font-size: 15px;
+        line-height: 24px;
+        /* identical to box height, or 120% */
+
+        color: $black-color;
+      }
+    }
+  }
+  .sidebarContent {
+    margin-top: 45px;
+    width: 100%;
+    @media screen and (max-width: 992px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      svg {
+        margin-right: 0 !important;
+      }
+    }
+    &.disabled {
+      pointer-events: none;
+    }
+    .sidebarBox {
+      position: relative;
+      .mobileMenu {
+        position: absolute;
+        left: 42px;
+        min-width: 150px;
+        top: 10px;
+        background: #ffffff;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 0px 12px 12px 0px;
+        padding: 0 20px;
+        padding-bottom: 20px;
+        span {
+          padding: 10px 0px;
+          padding-top: 20px;
+          display: block;
+          font-family: "poppins-semi-bold";
+        }
+        a {
+          font-size: 12px;
+          li {
+            font-size: 12px;
+            font-family: "poppins-regular";
+          }
+        }
+      }
+      .navLink {
+        .menuBox {
+          display: flex;
+          align-items: center;
+          position: relative;
+          margin-bottom: 20px;
+          .arrow {
+            position: absolute;
+            right: 10px;
+            top: 60%;
+            transform: translate(0, -50%);
+
+            svg {
+              margin-right: 0;
+              font-size: 15px;
+              color: $black-color;
+            }
+          }
+          svg {
+            margin-right: 20px;
+            max-width: 14px;
+            min-width: 14px;
+            @media screen and (max-width: 992px) {
+              max-width: 24px;
+              min-width: 15px;
+            }
+          }
+          span {
+            font-family: "poppins-light";
+            font-style: normal;
+            width: 100%;
+
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 0.025em;
+            position: relative;
+            color: $black-color;
+          }
+        }
+        &.disabled {
+          svg {
+            color: #afafaf;
+          }
+          span {
+            color: #afafaf;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 40px;
+    margin-bottom: 30px;
+
+    .navLink2 {
+      font-family: "poppins-light";
+      font-style: normal;
+      width: 100%;
+
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.025em;
+      display: block;
+      margin-bottom: 10px;
+      position: relative;
+      color: $black-color;
+      &.disabled {
+        color: #afafaf;
+      }
+    }
+  }
+}
+
+.uploadIcon {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  top: 0;
+  svg {
+    z-index: 1;
+    position: absolute;
+    max-width: 14px !important;
+    max-height: 14px !important;
+    transform: translate(-50%, -50%);
+    left: 50% !important;
+    top: 50% !important;
+    box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.1);
+    path {
+      color: $white-color;
+      stroke: $white-color;
+    }
+  }
+}

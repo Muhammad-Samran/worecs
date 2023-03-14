@@ -1,0 +1,47 @@
+@import "../../../styles/theme/variables";
+
+@import "../../../styles/theme/mixins";
+.gridParrent {
+  padding: 74px 62px;
+
+  @media screen and (max-width: 768px) {
+    padding: 55px 16px;
+  }
+  .featured {
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      h4 {
+        @include main-heading;
+      }
+    }
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 130px;
+      background: $white-color;
+      box-shadow: 0px 4px 7px -2px rgba(0, 0, 0, 0.25);
+      border-radius: 7px;
+      cursor: pointer;
+      img {
+        max-width: 42px;
+        max-height: 42px;
+        margin-bottom: 10px;
+      }
+      h5 {
+        font-family: "poppins-regular";
+        font-style: normal;
+        //   font-weight: 500;
+        font-size: 12px;
+        line-height: 24px;
+        /* identical to box height, or 200% */
+
+        color: $black-color;
+      }
+    }
+  }
+}

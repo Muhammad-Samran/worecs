@@ -1,0 +1,39 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.candidateTable {
+  position: relative;
+  .customBox {
+    table {
+      box-shadow: none;
+    }
+    .contentBox {
+      td {
+        font-family: "poppins";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 24px;
+        box-shadow: none;
+        cursor: pointer;
+        /* identical to box height, or 200% */
+
+        color: $black-color;
+      }
+    }
+    .headingBox {
+      th {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+
+        font-size: 13px;
+        line-height: 28px;
+        /* identical to box height, or 215% */
+
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+
+        color: #000000;
+      }
+    }
+  }
+}

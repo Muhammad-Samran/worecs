@@ -1,0 +1,33 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.modelMail {
+  h2 {
+    @include heading_signup;
+    text-align: left;
+    font-size: 23px;
+    font-family: "poppins-bold";
+  }
+  p {
+    @include description_signup;
+    font-family: "poppins-light";
+    text-align: left;
+  }
+  .buttonSection {
+    padding: 10px 24px;
+    padding-bottom: 20px;
+    .button {
+      margin: 0;
+      button {
+        margin-top: 0;
+      }
+    }
+
+    .button1 {
+      margin: 0;
+      button {
+        margin-top: 0;
+        margin-left: -15px;
+      }
+    }
+  }
+}

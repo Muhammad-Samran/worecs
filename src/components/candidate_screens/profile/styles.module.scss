@@ -1,0 +1,150 @@
+@import "../../../styles/theme/variables";
+.parent {
+  h4 {
+    font-family: "poppins-bold";
+    font-style: normal;
+
+    font-size: 28px;
+    line-height: 24px;
+    color: $black-color;
+    margin-bottom: 15px;
+  }
+  h5 {
+    font-family: "poppins-bold";
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+    color: $black-color;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: initial;
+    max-width: initial;
+    margin: initial;
+    button {
+      width: auto;
+      svg {
+        margin-right: 8px;
+      }
+    }
+    .editicon {
+      margin-left: 15px;
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  .userInfo {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+    }
+    .userImg {
+      // max-width: 82px;
+      // max-height: 82px;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+    }
+    h4 {
+      font-family: "poppins-semi-bold";
+      font-style: normal;
+      font-size: 11px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      text-transform: capitalize;
+      color: $black-color;
+      margin-bottom: 0;
+    }
+    p {
+      font-style: normal;
+      font-size: 11px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      // text-transform: capitalize;
+      color: #868686;
+    }
+    .editicon {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+  .userDetail {
+    display: flex;
+    align-items: center;
+    margin-top: 26px;
+    position: relative;
+    img {
+      max-width: 52px;
+      max-height: 52px;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+      margin-right: 34px;
+    }
+    h4 {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 5px;
+    }
+    h5 {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 14px;
+      color: $black-color;
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 14px;
+      color: #92929d;
+    }
+  }
+  .customBox {
+    table {
+      box-shadow: none;
+    }
+    .contentBox {
+      td {
+        font-family: "poppins-semi-bold";
+
+        font-size: 11px;
+        line-height: 28px;
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+        color: #868686;
+      }
+    }
+    .headingBox {
+      th {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+        letter-spacing: 0.2px;
+        font-size: 13px;
+        line-height: 28px;
+        color: #92929d;
+      }
+    }
+  }
+}

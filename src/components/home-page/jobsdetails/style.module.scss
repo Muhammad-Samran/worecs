@@ -1,0 +1,165 @@
+@import "../../../styles/theme/mixins";
+@import "../../../styles/theme/fonts";
+@import "../../../styles/theme/variables";
+
+.parent {
+  margin-top: 100px;
+
+  .main_heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+      @include main-heading;
+    }
+    b {
+      @include main-heading;
+      color: $primary-color;
+      text-decoration: underline;
+    }
+    h6 {
+      padding-top: 15px;
+      font-family: "poppins";
+      font-size: 16px;
+      color: #757575;
+    }
+  }
+  .job_box_main {
+    display: flex;
+    justify-content: center;
+    .job_box {
+      margin-top: 30px;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+      width: 80%;
+      padding: 20px;
+      border-radius: 10px;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+      .job_box_img {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 600px) {
+          justify-content: center;
+        }
+        img {
+          width: 150px;
+        }
+      }
+      .job_box_right {
+        display: flex;
+        // justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (max-width: 600px) {
+          align-items: center;
+        }
+        .job_box_right_head {
+          @media screen and (max-width: 600px) {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .job_box_heading {
+          margin: 15px 0px;
+
+          h5 {
+            font-family: "poppins";
+            font-weight: 600;
+            font-size: 22px;
+          }
+          span {
+            color: $primary-color;
+          }
+          .job_box_left {
+            @media screen and (max-width: 600px) {
+              display: flex;
+              justify-content: center;
+            }
+          }
+          .job_box_heading_right {
+            display: flex;
+            justify-content: flex-end;
+            @media screen and (max-width: 600px) {
+              justify-content: center;
+            }
+          }
+        }
+        .job_btn_box {
+          .job_btn_box_heading {
+            @media screen and (max-width: 600px) {
+              display: flex;
+              justify-content: center;
+            }
+          }
+          .job_btn_box_heading_left {
+            display: flex;
+            justify-content: center;
+          }
+          @media screen and (max-width: 600px) {
+            display: flex;
+            justify-content: center;
+          }
+          h6 {
+            font-family: "poppins";
+            font-weight: 300;
+            font-size: 15px;
+          }
+          .job_btn {
+            padding-top: 5px;
+            display: flex;
+            justify-content: flex-end;
+            button {
+              text-transform: capitalize;
+              color: $white-color !important;
+              background-color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .jobs_details_left_box {
+    h5 {
+      font-family: "poppins";
+      font-weight: 600;
+      padding-bottom: 10px;
+      font-size: 24px;
+    }
+    p {
+      font-family: "poppins";
+      font-size: 16px;
+      color: #757575;
+    }
+    button {
+      margin-top: 25px;
+      background-color: $primary-color;
+      width: 150px;
+      text-transform: capitalize;
+      color: $white-color !important;
+    }
+  }
+  .jobs_details_right_box {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 10px;
+    // height: 600px;
+    h2 {
+      font-family: "poppins";
+      font-weight: 600;
+      padding-bottom: 10px;
+      font-size: 24px;
+      // border-bottom: 2px solid $primary-color;
+    }
+    p {
+      font-family: "poppins";
+      font-size: 16px;
+      color: #757575;
+      span {
+        color: $primary-color;
+        padding-right: 40px;
+      }
+    }
+  }
+}

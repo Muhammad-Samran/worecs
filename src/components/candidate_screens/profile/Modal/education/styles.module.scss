@@ -1,0 +1,142 @@
+@import "../../../../../styles/theme/variables";
+.industryModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+
+  .boxModel {
+    background: #ffffff;
+    box-shadow: 0px 5px 17px 10px rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+    min-width: 624px;
+    max-width: 624px;
+
+    min-height: auto;
+
+    position: relative;
+    padding: 40px;
+
+    @media screen and (max-width: 1200px) {
+      min-width: 300px;
+      max-width: 100%;
+      max-height: calc(100vh - 40%);
+      overflow: auto;
+      margin: 0 20px;
+      padding: 16px;
+      // min-height:300px;
+    }
+    .cross {
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      margin-right: 10px;
+      right: 0px;
+      display: flex;
+      // display: none;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid $black-color;
+      &:hover {
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        svg path {
+          color: $white-color;
+          stroke: $white-color;
+        }
+      }
+      svg {
+        stroke: $black-color;
+      }
+    }
+
+    .heading {
+      font-family: "poppins-bold";
+      font-style: normal;
+
+      font-size: 28px;
+      line-height: 24px;
+      color: $black-color;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.025em;
+      color: #6c6a6a;
+      a {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    .heading2 {
+      font-family: "poppins-bold";
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.025em;
+      color: #000000;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .textLink {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.025em;
+      margin-top: 20px;
+      color: #6c6a6a;
+      a {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    .textHelp {
+      font-style: normal;
+
+      font-size: 14px;
+      line-height: 21px;
+      font-family: "poppins-regular";
+      letter-spacing: 0.025em;
+      color: #6c6a6a;
+      margin-top: 5px;
+    }
+    .statusbox {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .boxForm {
+        @media screen and (max-width: 992px) {
+          min-width: 100%;
+        }
+      }
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-width: initial;
+        max-width: initial;
+        margin: initial;
+        width: 273px;
+        button {
+          max-width: 126px;
+
+          svg {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.calendarBox {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+    h4 {
+      @include main-heading;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    .button {
+      margin: 0;
+      width: 100%;
+      max-width: 170px;
+
+      button {
+        margin: 0;
+        max-width: 100%;
+        // min-width: 210px;
+      }
+    }
+  }
+}

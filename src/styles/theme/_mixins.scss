@@ -1,0 +1,106 @@
+@mixin heading_h2 {
+  font-family: "poppins-bold";
+  font-style: normal;
+
+  font-size: 36px;
+  line-height: 36px;
+  /* identical to box height, or 99% */
+
+  color: $black-color;
+  text-align: center;
+}
+
+// signup-page
+
+@mixin heading_signup {
+  font-family: "poppins-semi-bold";
+  font-style: normal;
+
+  font-size: 23px;
+  line-height: 36px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.025em;
+
+  color: $black-color;
+}
+
+@mixin description_signup {
+  font-family: "poppins-light";
+  font-style: normal;
+  font-weight: 275;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.025em;
+  color: $black-color;
+}
+// bottom button for next and prev
+@mixin prev_button {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  @media screen and (max-width: 992px) {
+    left: 0px;
+    bottom: -15px;
+  }
+  button {
+    max-width: 58px;
+    width: 100%;
+    min-height: 58px;
+    display: flex;
+    color: $white-color;
+    font-size: 23px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color;
+    border: 1px solid $primary-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (max-width: 992px) {
+      min-height: 32px;
+      min-width: 38px;
+    }
+  }
+}
+@mixin next_button {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  @media screen and (max-width: 992px) {
+    right: 0px;
+    bottom: -15px;
+  }
+  button {
+    max-width: 58px;
+    width: 100%;
+    min-height: 58px;
+    display: flex;
+    color: $white-color;
+    font-size: 23px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: $primary-color;
+    border: 1px solid $primary-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (max-width: 992px) {
+      min-height: 32px;
+      min-width: 38px;
+    }
+  }
+}
+
+// main dashboard heading
+
+@mixin main-heading {
+  font-family: "poppins-bold";
+  font-style: normal;
+
+  font-size: 28px;
+  line-height: 24px;
+  /* identical to box height, or 75% */
+
+  color: $black-color;
+}

@@ -1,0 +1,119 @@
+@import "../../../styles/theme/variables";
+
+.industryModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .buttoninterview {
+    margin: 0;
+    max-width: 280px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      max-width: 120px;
+    }
+  }
+  .heading {
+    font-family: "poppins-bold";
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    color: $black-color;
+    text-align: center;
+    margin-bottom: 30px;
+    @media screen and (max-width: 1280px) {
+      max-width: 250px;
+      text-align: left;
+    }
+  }
+  .preview {
+    position: relative;
+    max-width: 200px;
+
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &:hover {
+      .crossIconsImage {
+        display: block;
+      }
+    }
+
+    .crossIconsImage {
+      // display: none;
+      position: absolute;
+      right: 0px;
+      top: -10px;
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 200px;
+      max-height: 200px;
+      object-fit: cover;
+    }
+  }
+  .imageUpload {
+    max-width: 72px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      cursor: pointer;
+    }
+    & > input {
+      display: none;
+    }
+  }
+  .boxModel {
+    background: #ffffff;
+    box-shadow: 0px 5px 17px 10px rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+    min-width: 500px;
+    max-width: 500px;
+    min-height: auto;
+    position: relative;
+    padding: 40px;
+
+    @media screen and (max-width: 1200px) {
+      min-width: 300px;
+      max-width: 100%;
+      margin: 0 20px;
+      padding: 16px;
+      min-height: 300px;
+    }
+    .cross {
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid $black-color;
+      &:hover {
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        svg path {
+          color: $white-color;
+          stroke: $white-color;
+        }
+      }
+      svg {
+        stroke: $black-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../styles/theme/variables";
+.faqCard {
+  // background: $white-color;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  border-radius: 16px;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+  padding: 25px 23px;
+  max-width: 400px;
+  .cardHeader {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    .btnToggler {
+      padding: 0;
+      min-width: 30px;
+    }
+  }
+  .cardBody {
+    padding-top: 10px;
+    p {
+      font-size: 14px;
+      color: #898989;
+      // text-align: justify;
+    }
+  }
+}

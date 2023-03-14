@@ -1,0 +1,69 @@
+@import "../../../styles/theme/variables";
+
+.inputCoupon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: $white-color;
+  z-index: 1;
+  border: 1px solid #afafaf;
+  border-right: 0px;
+  input {
+    border: 0px;
+    border-radius: 0px;
+    width: 100%;
+    position: relative;
+    display: block;
+    min-height: 41px;
+    font-family: "poppins-light";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 16px !important;
+    letter-spacing: 0.025em;
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    color: $grey-color;
+    &:focus-visible {
+      outline: none;
+      border: 0px;
+    }
+    &::placeholder {
+      font-family: "poppins-light";
+      font-style: normal;
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height */
+      letter-spacing: 0.025em;
+      color: $grey-color;
+    }
+  }
+  button {
+    width: 30px;
+    min-height: 41px;
+    max-height: 41px;
+    z-index: 2;
+    display: block;
+    border-radius: 0;
+    background: #00cfc5;
+    &:hover {
+      background: #00cfc5;
+    }
+    span {
+      margin-top: 4px;
+      width: 22px !important;
+      height: 22px !important;
+    }
+    svg {
+      color: white !important;
+      max-height: auto;
+    }
+  }
+}

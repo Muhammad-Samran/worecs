@@ -1,0 +1,120 @@
+.pricing_main_box{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 100%;
+width: 100%;
+}
+.pricing_heading_h5{
+    font-family: "poppins-bold" !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    line-height: 24px !important;
+    margin-bottom: 15px !important;
+}
+.pricing_heading_h6{
+    /* width: 60%; */
+    font-family: "Poppins" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    color: #757575 !important;
+}
+.pricing_img{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+.pricing_main_box_h4heading_bold{
+    font-family: "poppins-bold" !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    line-height: 24px !important;
+    color: #00CFC5 !important;
+    text-decoration: underline;
+    /* margin-bottom: 10px; */
+}
+.pricing_main_box_h4heading{
+    font-family: "poppins-bold" !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    line-height: 24px !important;
+    /* color: #00CFC5; */
+    margin-bottom: 10px;
+}
+.pricing_main_box_paragraph{
+    width: 60%;
+    font-family: "Poppins" !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 25px !important;
+    color: #757575 !important;
+}
+.customsolution_box_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.customsolution_box_main{
+    padding: 50px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:10px;
+
+}
+.customsolution_h4_heading{
+    font-family: "poppins-bold" !important;
+    font-style: normal !important;
+    font-size: 25px !important;
+    line-height: 24px !important;
+    color: #000000;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+.pricingtable_liststyle{
+    font-family: "Poppins-semi-bold";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px !important;
+    line-height: 30px;
+    color: #757575;
+    padding-bottom: 10px;
+}
+.customsolution_h4_heading_info{
+    font-family: "poppins-bold" !important;
+    font-style: normal !important;
+    font-size: 20px !important;
+    line-height: 24px !important;
+    color: #000000;
+}
+.customsolution_btn_box{
+    display: flex;
+    justify-content: center;
+}
+.customsolution_btn_signin{
+    border: 1px solid #00CFC5 !important;
+    color: #00CFC5 !important;
+    margin-right: 20px;
+}
+.customsolution_btn{
+    background-color: #00CFC5 !important;
+    width: 100%;
+}
+@media only screen and (max-width: 440px) {
+    .pricing_main_box_h4heading {
+      font-size: 24px !important;
+    }
+    .customsolution_h4_heading , .customsolution_h4_heading_info{
+        font-size: 20px !important;
+    }
+    .pricing_main_box_paragraph , .pricingtable_liststyle , .pricing_heading_h6{
+      font-size: 14px !important;
+    }
+    .pricing_main_box_paragraph{
+        width: 100%;
+    }
+  }

@@ -1,0 +1,57 @@
+@import "../../styles/theme/variables";
+.header {
+  min-height: 75px;
+  padding: 20px 44px;
+  @media screen and (max-width: 992px) {
+    padding: 20px 15px;
+  }
+  .message {
+    margin-right: 20px;
+    @media screen and (max-width: 992px) {
+      margin-right: 0;
+    }
+  }
+  .notification {
+    // margin-right: 20px;
+    @media screen and (max-width: 992px) {
+      margin-right: 0;
+    }
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: "poppins-semi-bold";
+    color: $primary-color;
+  }
+  .profileMenu {
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    h5 {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height, or 125% */
+
+      display: flex;
+      align-items: center;
+
+      color: black;
+      margin-right: 10px;
+    }
+    i {
+      color: $black-color;
+    }
+  }
+  .homebtn{
+    font-size: 0;
+    color: #2E3236;
+    overflow: hidden;
+    vertical-align: middle;
+    fill: none;
+
+  }
+}

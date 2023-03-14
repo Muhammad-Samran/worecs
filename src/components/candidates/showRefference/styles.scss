@@ -1,0 +1,135 @@
+@import "../../../styles/theme/variables";
+
+.interviewParrent {
+  .stars-form {
+    label {
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 15px;
+      line-height: 22px;
+      /* identical to box height */
+      display: block;
+
+      letter-spacing: 0.025em;
+
+      color: $black-color;
+      margin-bottom: 4px;
+    }
+  }
+  .inputReffShow {
+    min-width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    input {
+      text-transform: capitalize;
+    }
+  }
+  .box {
+    display: flex;
+    align-items: flex-start;
+    // flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 5px;
+
+    h5 {
+      font-size: 12px;
+      font-family: "poppins-semi-bold";
+      font-weight: bold;
+    }
+    p {
+      font-size: 12px;
+      margin-left: 10px;
+      font-family: "poppins-light";
+      word-break: break-all;
+    }
+  }
+  h3 {
+    font-family: "poppins-bold";
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    color: $black-color;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .interviewSelect {
+    min-width: 320px;
+    max-width: 320px;
+    @media screen and (max-width: 576px) {
+      min-width: 100%;
+      max-width: 100%;
+    }
+  }
+  .buttoninterview {
+    margin: 0;
+    max-width: 320px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      max-width: 120px;
+    }
+  }
+  .date-picker {
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .react-datepicker-wrapper {
+    min-width: 320px;
+    @media screen and (max-width: 576px) {
+      min-width: 100%;
+      max-width: 100%;
+    }
+    input {
+      background: $white-color;
+      border: 1px solid #afafaf;
+      border-radius: 3px;
+      width: 100%;
+      min-height: 41px;
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height */
+      padding: 10px 16px;
+      letter-spacing: 0.025em;
+
+      color: $grey-color;
+      &:focus-visible {
+        outline: $primary-color auto 1px;
+      }
+      &::placeholder {
+        font-family: "poppins-light";
+        font-style: normal;
+
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height */
+
+        letter-spacing: 0.025em;
+
+        color: $grey-color;
+      }
+    }
+  }
+  .inputInterview {
+    min-width: 320px;
+    max-width: 320px;
+    @media screen and (max-width: 576px) {
+      min-width: 100%;
+      max-width: 100%;
+    }
+    input {
+      padding: 5px 33px;
+    }
+  }
+}

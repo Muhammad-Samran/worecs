@@ -1,0 +1,105 @@
+@import "../../../styles/theme/variables";
+
+.formInput {
+  min-width: 350px;
+  margin-top: 19px;
+  position: relative;
+  min-height: 41px;
+  label {
+    font-family: "poppins-light";
+    font-style: normal;
+
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    display: block;
+
+    letter-spacing: 0.025em;
+
+    color: $black-color;
+    margin-bottom: 4px;
+  }
+  input {
+    background: $white-color;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+    min-height: 41px;
+    font-family: "poppins-regular";
+    font-style: normal;
+
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    padding: 10px 16px !important;
+    letter-spacing: 0.025em;
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    // color: $grey-color;
+    &:focus-visible {
+      outline: $primary-color auto 1px;
+    }
+    &::placeholder {
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height */
+
+      letter-spacing: 0.025em;
+
+      color: $grey-color;
+    }
+  }
+  textarea {
+    background: $white-color;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    width: 100%;
+    min-height: 41px;
+    font-family: "poppins-light";
+    font-style: normal;
+
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    resize: none;
+    padding: 10px 16px !important;
+    letter-spacing: 0.025em;
+
+    // color: $grey-color;
+    &:focus-visible {
+      outline: $primary-color auto 1px;
+    }
+    &::placeholder {
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height */
+
+      letter-spacing: 0.025em;
+
+      color: $grey-color;
+    }
+  }
+  .showPass {
+    position: absolute;
+    right: 16px;
+    top: 35px;
+    cursor: pointer;
+    svg {
+      color: $primary-color;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.parent {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      h4 {
+        margin-bottom: 16px;
+      }
+    }
+    h4 {
+      @include main-heading;
+    }
+
+    .searchBox {
+      display: flex;
+      align-items: center;
+      background: #fafafa;
+      min-width: 277px;
+      border-radius: 3px;
+      min-height: 44px;
+      padding: 10px 15px;
+      svg {
+        margin-right: 10px;
+        color: #757575;
+      }
+      input {
+        font-family: "poppins-regular";
+        font-style: normal;
+
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+        border: none;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+        background: transparent;
+        /* systemGrey/600 */
+
+        color: #757575;
+        &:focus-visible {
+          outline: none;
+        }
+        &::placeholder {
+          font-family: "poppins-regular";
+          font-style: normal;
+
+          font-size: 16px;
+          line-height: 24px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.2px;
+          background: transparent;
+          /* systemGrey/600 */
+
+          color: #757575;
+        }
+      }
+    }
+  }
+  h5 {
+    margin-top: 10px;
+    font-family: "poppins-light";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #92929d;
+  }
+  .candidateTable {
+    margin-top: 46px;
+    h5 {
+      font-family: "poppins-semi-bold";
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height, or 120% */
+
+      color: $black-color;
+      margin-bottom: 16px;
+    }
+  }
+}

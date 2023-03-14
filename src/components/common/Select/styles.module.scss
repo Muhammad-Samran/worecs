@@ -1,0 +1,20 @@
+@import "../../../styles/theme/variables";
+.select {
+  max-width: 350px;
+  margin: auto;
+  margin-top: 20px;
+  label {
+    font-family: "poppins-light";
+    font-style: normal;
+
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    display: block;
+
+    letter-spacing: 0.025em;
+
+    color: $black-color;
+    margin-bottom: 4px;
+  }
+}

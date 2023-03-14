@@ -1,0 +1,83 @@
+@import "../../../styles/theme/variables";
+.parent {
+  padding: 74px 62px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  max-width: 690px;
+  margin: auto;
+  @media screen and (max-width: 768px) {
+    padding: 30px 16px;
+  }
+  h2 {
+    font-family: "poppins-semi-bold";
+    font-style: normal;
+
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+    /* or 110% */
+
+    letter-spacing: 1.42857px;
+
+    color: $black-color;
+    @media screen and (max-width: 992px) {
+      font-size: 30px;
+    }
+  }
+  span {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+  p {
+    font-family: "poppins-semi-bold";
+    font-style: normal;
+
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    color: $grey-color;
+    @media screen and (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
+  .input {
+    max-width: 315px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .select {
+    max-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+    label {
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 15px;
+      line-height: 22px;
+      /* identical to box height */
+      display: block;
+
+      letter-spacing: 0.025em;
+
+      color: $black-color;
+      margin-bottom: 4px;
+    }
+  }
+  .button {
+    max-width: 150px;
+    button {
+      span {
+        margin-left: 3px;
+        display: flex;
+        color: $white-color;
+        align-items: center;
+      }
+    }
+  }
+}

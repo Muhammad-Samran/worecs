@@ -1,0 +1,152 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.modalParent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  width: 100%;
+  background-color: $white-color;
+  border: none;
+  padding: 40px;
+  // border-radius: 38px;
+  max-height: calc(100% - 30px);
+  overflow-y: auto;
+  .modalwapper {
+    position: relative;
+    .checkBox {
+      margin-top: 20px;
+    }
+    .cross {
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      top: -10px;
+      right: 0px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid $black-color;
+      &:hover {
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        svg path {
+          color: $white-color;
+          stroke: $white-color;
+        }
+      }
+      svg {
+        stroke: $black-color;
+      }
+    }
+
+    .heading {
+      font-family: "poppins-bold";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 24px;
+      color: $black-color;
+      margin-bottom: 20px;
+    }
+    .desc {
+      font-family: "poppins-regular";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.025em;
+      color: #6c6a6a;
+      a {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    .heading2 {
+      font-family: "poppins-bold";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.025em;
+      color: #000000;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .textLink {
+      font-family: "poppins-regular";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.025em;
+      margin-top: 20px;
+      color: #6c6a6a;
+      a {
+        color: $primary-color;
+        text-decoration: underline;
+      }
+    }
+    .textHelp {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 21px;
+      font-family: "poppins-regular";
+      letter-spacing: 0.025em;
+      color: #6c6a6a;
+      margin-top: 5px;
+    }
+    .statusbox {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        min-width: initial;
+        max-width: initial;
+        margin: initial;
+        width: 273px;
+        button {
+          max-width: 126px;
+
+          svg {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    .innerContent {
+      .parentInput {
+        position: relative;
+        .input {
+          min-width: 100% !important;
+          background-color: red;
+          label {
+            font-family: "poppins-regular";
+            font-weight: 500;
+          }
+        }
+        span {
+          position: absolute;
+          left: 3px;
+          display: block;
+          color: $red-color;
+          font-family: "poppins-semi-bold";
+          font-size: 12px;
+        }
+      }
+    }
+    input[type="date"] {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.parent {
+  width: 100%;
+  padding: 0px 50px;
+  .header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    h4 {
+      @include main-heading;
+      color: #00CFC5;
+    }
+  }
+  .contactUs {
+    margin-top: 23px;
+    .contactUsHeader {
+      h5 {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+
+        font-size: 20px;
+        line-height: 24px;
+        color: $black-color;
+      }
+      p {
+        margin-top: 10px;
+
+        font-size: 14px;
+      }
+    }
+    .contactUsContent {
+      .lastInpGrid {
+        @media (max-width: 1200px) {
+          padding-top: 0px;
+        }
+      }
+      .tillbtn{
+        margin-top: 55px;
+        @media screen and (max-width: 1199px) {
+          margin-top: 0px;
+        }
+      }
+      .contactusInp {
+        min-width: unset;
+        input {
+          border: 2px solid #898989;
+          border-radius: 6px;
+        }
+        textarea {
+          border: 2px solid #898989;
+          border-radius: 6px;
+        }
+      }
+      .upload_file_box{
+        border: 2px dashed #898989;
+        padding: 40px;
+      }
+      .btnSend {
+        display: flex;
+        justify-content: center;
+        background-color: #00CFC5;
+        margin: 25px auto;
+        width: 130px;
+        font-size: 12px;
+      }
+      .rightContent {
+        margin-bottom: 50px;
+        @media screen and (min-width: 992px) {
+          padding-left: 50px;
+        }
+        h6 {
+          font-family: "poppins-regular";
+
+          font-size: 20px;
+        }
+        p {
+          font-family: "poppins-light";
+          max-width: 400px;
+
+          font-size: 15px;
+        }
+        a {
+          color: $primary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.innerContent {
+  margin-top: 25px !important;
+  max-width: 462px;
+  margin: auto;
+  padding-bottom: 30px;
+  h3 {
+    @include heading_signup;
+  }
+
+  p {
+    margin-top: 9px;
+    @include description_signup;
+  }
+  .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 350px;
+    margin: auto;
+    margin-top: 40px;
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &.active {
+        .circle {
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            right: 10px;
+            background-image: url("../../../assets/icons/tick-icon.png");
+            background-size: 100% 100%;
+            width: 30px;
+            height: 30px;
+            top: 5px;
+          }
+        }
+      }
+      .circle {
+        min-width: 109px;
+        min-height: 109px;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+        background-color: $primary-color;
+        cursor: pointer;
+        &:hover {
+          box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+        }
+        img {
+          max-width: 62px;
+        }
+      }
+      h4 {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 30px;
+        /* identical to box height */
+
+        letter-spacing: 0.025em;
+
+        color: $black-color;
+      }
+    }
+  }
+  .buttonNext {
+    @include next_button;
+  }
+}

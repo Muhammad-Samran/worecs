@@ -1,0 +1,285 @@
+@import "../../../styles/theme/variables";
+.gridParrent {
+  padding: 74px 62px;
+  h2 {
+    font-family: "poppins-bold";
+    font-style: normal;
+
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+
+    color: $black-color;
+
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 55px 16px;
+  }
+  :global {
+    .rccs {
+      @media screen and (min-width: 992px) {
+        padding-left: 20px;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .rccs__card {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .input {
+    min-width: 100%;
+    margin-top: 8px;
+  }
+  .button {
+    max-width: 100%;
+    min-width: auto;
+    button {
+      margin-top: 35px;
+    }
+  }
+
+  .content {
+    .heading {
+      font-family: "poppins-semi-bold";
+      font-style: normal;
+      //   font-weight: 500;
+      font-size: 13px;
+      line-height: 24px;
+      /* identical to box height, or 200% */
+
+      color: $black-color;
+    }
+    .contentBox {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width: 100%;
+
+      flex-wrap: wrap;
+      .left {
+        // flex: 0 0 55%;
+        display: flex;
+        align-items: center;
+        .button {
+          margin: 0;
+
+          max-width: 226px;
+          min-width: 226px;
+
+          button {
+            margin: 0;
+            min-height: 30px;
+            max-width: 100px;
+            font-size: 11px;
+            margin-left: auto;
+          }
+        }
+        .withSelect {
+          display: flex;
+          align-items: center;
+          .checkbox {
+            border: 1px solid $primary-color;
+            min-width: 26px;
+            max-width: 26px;
+            // width: 100%;
+            min-height: 26px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          span {
+            font-family: "poppins-semi-bold";
+            font-style: normal;
+            //   font-weight: 500;
+            font-size: 11px;
+            line-height: 24px;
+            /* identical to box height, or 200% */
+
+            color: $black-color;
+
+            margin-left: 10px;
+          }
+        }
+        .checkbox {
+          border: 1px solid $primary-color;
+          min-width: 26px;
+          max-width: 26px;
+          // width: 100%;
+          min-height: 26px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        span {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          //   font-weight: 500;
+          position: relative;
+          font-size: 11px;
+          line-height: 24px;
+          max-width: 350px;
+          /* identical to box height, or 200% */
+
+          color: $black-color;
+          padding-left: 15px;
+          &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            position: absolute;
+            left: 0;
+            top: 7px;
+          }
+
+          //
+        }
+        .selectParent {
+          margin-left: 10px;
+          .selectChild {
+            margin: 0;
+          }
+        }
+      }
+
+      .right {
+        // flex: 0 0 45%;
+        display: flex;
+        align-items: center;
+        .buttonSection {
+          .button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+          & button:first-child {
+            margin-right: 10px;
+          }
+          .button {
+            max-width: 200px;
+            min-width: 200px;
+            button {
+              margin-left: 0;
+              max-width: 60px;
+            }
+          }
+        }
+        .button {
+          margin: 0;
+          max-width: 226px;
+          min-width: 226px;
+
+          button {
+            margin: 0;
+            min-height: 30px;
+            max-width: 100px;
+            font-size: 11px;
+            margin-left: auto;
+          }
+        }
+        p {
+          margin: 0;
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+
+          font-size: 12px;
+          line-height: 15px;
+          margin-left: 10px;
+          color: #000000;
+        }
+        .inputBox {
+          min-width: auto;
+          margin: 0;
+
+          min-height: 30px;
+          display: flex;
+          input {
+            min-width: 62px;
+            max-width: 62px;
+            min-height: 30px;
+            max-height: 30px;
+            padding: 5px !important;
+          }
+        }
+        span {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          //   font-weight: 500;
+          font-size: 11px;
+          line-height: 24px;
+          /* identical to box height, or 200% */
+          min-width: 93px;
+          color: #898989;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.parentBox {
+  position: relative;
+}
+
+.input3Parent {
+  margin-top: 8px;
+  position: relative;
+  min-height: 41px;
+  label {
+    font-family: "poppins-light";
+    font-style: normal;
+
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    display: block;
+
+    letter-spacing: 0.025em;
+
+    color: $black-color;
+    margin-bottom: 4px;
+  }
+  .input3 {
+    background: $white-color;
+    border: 1px solid #afafaf;
+    border-radius: 3px;
+    width: 100%;
+    position: relative;
+    min-height: 41px;
+    font-family: "poppins-light";
+    font-style: normal;
+
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    padding: 10px 16px !important;
+    letter-spacing: 0.025em;
+    &::-webkit-inner-spin-button {
+      margin: 0;
+    }
+    &::-webkit-outer-spin-button {
+      margin: 0;
+    }
+    color: $grey-color;
+    &:focus-visible {
+      outline: $primary-color auto 1px;
+    }
+    &::placeholder {
+      font-family: "poppins-light";
+      font-style: normal;
+
+      font-size: 12px;
+      line-height: 18px;
+      /* identical to box height */
+
+      letter-spacing: 0.025em;
+
+      color: $grey-color;
+    }
+  }
+}

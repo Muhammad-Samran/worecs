@@ -1,0 +1,11 @@
+export { default as Dashboard } from "./Activity";
+export { default as Candidates } from "./Candidates";
+export { default as HelpDesk } from "./HelpDesk";
+export { default as Industry } from "./Industry";
+export { default as WorkSpace } from "./WorkSpace";
+export { default as Forms } from "./forms";
+export { default as Company } from "./Company";
+export { default as interview } from "./Interview";
+export { default as Pricing } from "./Pricing";
+export { default as Order } from "./Order";
+export { default as OrderDetail } from "./OrderDetail";

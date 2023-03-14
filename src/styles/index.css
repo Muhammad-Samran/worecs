@@ -1,0 +1,58 @@
+@import url("./theme/_fonts.scss");
+@import url("./theme/_styles.scss");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins-regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a,
+ol {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-primary {
+  color: #00cfc5 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .css-1ss2ei0-MuiContainer-root {
+    max-width: 1440px !important;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .css-1ss2ei0-MuiContainer-root {
+    max-width: 1536px !important;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  border: 7px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+  overflow-y: scroll;
+  background-color: #00cfc5;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+.stage-wrap {
+  border: 3px dashed #ccc;
+}
+
+.react-form-builder {
+  min-height: 1300px;
+} /*# sourceMappingURL=index.css.map */

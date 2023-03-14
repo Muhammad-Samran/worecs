@@ -1,0 +1,153 @@
+@import "../../../styles/theme/variables";
+@import "../../../styles/theme/mixins";
+.parent {
+  width: 100%;
+  padding: 0px 50px;
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    h4 {
+      @include main-heading;
+      color: #000000;
+    }
+    .bold_heading {
+      @include main-heading;
+      color: #00cfc5;
+      text-decoration: underline;
+    }
+  }
+  .contactUs {
+    margin-top: 23px;
+    .contactUsHeader {
+      h5 {
+        font-family: "poppins-semi-bold";
+        font-style: normal;
+
+        font-size: 20px;
+        line-height: 24px;
+        color: $black-color;
+      }
+      p {
+        margin-top: 10px;
+
+        font-size: 14px;
+      }
+    }
+    .contactUsContent {
+      .lastInpGrid {
+        @media (max-width: 1200px) {
+          padding-top: 0px;
+        }
+      }
+      .tillbtn {
+        margin-top: 55px;
+        @media screen and (max-width: 1199px) {
+          margin-top: 0px;
+        }
+      }
+      .contactusInp {
+        min-width: unset;
+        input {
+          border: 2px solid #898989;
+          border-radius: 6px;
+        }
+        textarea {
+          border: 2px solid #898989;
+          border-radius: 6px;
+        }
+      }
+      .btnSend {
+        display: flex;
+        justify-content: center;
+        background-color: #00cfc5;
+        margin: 25px auto;
+        width: 130px;
+        font-size: 12px;
+      }
+      .rightContent {
+        margin-bottom: 50px;
+        @media screen and (min-width: 992px) {
+          padding-left: 50px;
+        }
+        h6 {
+          font-family: "poppins-regular";
+
+          font-size: 20px;
+        }
+        p {
+          font-family: "poppins-light";
+          max-width: 400px;
+
+          font-size: 15px;
+        }
+        a {
+          color: $primary-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  :global {
+    .date-picker2 {
+      // margin-top: 19px;
+      label {
+        font-family: "poppins-light";
+        font-style: normal;
+        font-size: 15px;
+        line-height: 22px;
+        display: block;
+        letter-spacing: 0.025em;
+        color: #000000;
+        margin-bottom: 4px;
+        span {
+          color: red;
+        }
+      }
+      .react-datepicker__input-container {
+        width: 100%;
+        input {
+          background: #ffffff;
+          width: 100%;
+          position: relative;
+          min-height: 41px;
+          font-family: "poppins-regular";
+          font-style: normal;
+          font-size: 12px;
+          line-height: 18px;
+          padding: 10px 16px !important;
+          letter-spacing: 0.025em;
+          border: 2px solid #898989;
+          border-radius: 6px;
+        }
+      }
+    }
+    .timebox2 {
+      margin-top: 19px;
+      .error {
+        max-width: 100% !important;
+      }
+      span {
+        color: #000000 !important;
+      }
+      .label {
+        font-family: "poppins-light";
+        font-style: normal;
+        font-size: 15px;
+        line-height: 22px;
+        // display: block;
+        letter-spacing: 0.025em;
+        color: #000000 !important;
+        margin-bottom: 4px;
+        span {
+          color: #000000 !important;
+        }
+      }
+      select {
+        border: 2px solid #898989 !important;
+        border-radius: 6px !important;
+        width: 36.2%;
+      }
+    }
+  }
+}

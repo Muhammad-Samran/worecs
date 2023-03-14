@@ -1,0 +1,51 @@
+@import "../../../styles/theme/variables";
+
+.industryModel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .boxModel {
+    background: #ffffff;
+    box-shadow: 0px 5px 17px 10px rgba(0, 0, 0, 0.11);
+    border-radius: 5px;
+    // min-width: 950px;
+    max-width: 1150px;
+    min-height: auto;
+    position: relative;
+    overflow: auto;
+
+    @media screen and (max-width: 1200px) {
+      min-width: 300px;
+      max-width: 100%;
+      margin: 0 20px;
+      min-height: auto;
+    }
+    @media screen and (max-width: 600px) {
+      max-height: calc(100vh - 20%);
+    }
+    .cross {
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      border: 1px solid $black-color;
+      &:hover {
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        svg path {
+          color: $white-color;
+          stroke: $white-color;
+        }
+      }
+      svg {
+        stroke: $black-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+
+.logo_head{
+    font-family: "poppins-bold" !important;
+    font-style: normal !important;
+    font-size: 28px !important;
+    line-height: 24px !important;
+    color: #00CFC5 !important;
+    cursor: pointer;
+}
+.nav_link_home{
+    padding: 0;
+    padding-left: 0px;
+    font-weight: 400;
+    color: black;
+}
+.nav_link_home:hover{
+    text-decoration: none;
+    color: #00CFC5;
+    transition: 0.5s ease;
+}
+.sign_in_btn{
+    color: #00CFC5 !important;
+}
+.sign_up_btns{
+    
+    color: #00CFC5 !important;
+    margin-right: 5px !important;
+}
+.req_dem_btn{
+    /* padding-left: 8px; */
+    background-color: #00CFC5 !important;
+}
+.req_dem_btn:hover{
+    background-color: #00CFC5 !important;
+}

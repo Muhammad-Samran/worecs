@@ -1,0 +1,212 @@
+@import "../../../styles/theme/variables";
+.candidate {
+  .list {
+    p {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 15px;
+      /* identical to box height, or 125% */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.2px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #757575;
+    }
+  }
+  .header {
+    h4 {
+      font-family: "poppins-bold";
+      font-style: normal;
+
+      font-size: 32px;
+      line-height: 24px;
+
+      color: $black-color;
+    }
+    p {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 15px;
+      /* identical to box height, or 125% */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.2px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #757575;
+    }
+  }
+  .profileBox {
+    .imageBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h5 {
+        font-family: "poppins-light";
+        font-style: normal;
+
+        font-size: 18px;
+        line-height: 28px;
+        /* identical to box height, or 156% */
+
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+
+        color: $black-color;
+      }
+      p {
+        font-family: "poppins-light";
+        font-style: normal;
+
+        font-size: 13px;
+        line-height: 28px;
+
+        /* identical to box height, or 215% */
+
+        letter-spacing: 0.2px;
+        text-transform: capitalize;
+
+        color: $black-color;
+      }
+      svg {
+        max-width: 75px;
+      }
+    }
+    .info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin-top: 20px;
+      //   @media screen and (max-width: 900px) {
+      //     flex-direction: row;
+      //     flex-wrap: wrap;
+      //     justify-content: center
+      //     ;
+      //     .infoSection{
+      //         margin-top: 20px;
+      //         max-width: 30%;
+      //         text-align: center;
+      //     }
+      //   }
+      .infoSection {
+        @media screen and (min-width: 992px) {
+          padding-left: 20px;
+        }
+        h5 {
+          font-family: "poppins-light";
+          font-style: normal;
+
+          font-size: 12px;
+          line-height: 28px;
+          /* identical to box height, or 233% */
+
+          letter-spacing: 0.2px;
+          text-transform: capitalize;
+
+          color: $black-color;
+        }
+        p {
+          font-family: "poppins-light";
+          font-style: normal;
+
+          font-size: 12px;
+          line-height: 28px;
+          /* or 233% */
+
+          letter-spacing: 0.2px;
+
+          /* systemGrey/600 */
+
+          color: #757575;
+        }
+      }
+    }
+  }
+  .table1 {
+    margin-bottom: 50px;
+    h4 {
+      font-family: "poppins-bold";
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 28px;
+
+      color: $black-color;
+    }
+  }
+  .calendarBox {
+    h4 {
+      font-family: "poppins-bold";
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 28px;
+
+      color: $black-color;
+    }
+
+    p {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 15px;
+      /* identical to box height, or 125% */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.2px;
+      text-transform: capitalize;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: #757575;
+    }
+    .button {
+      margin: 0;
+      button {
+        min-width: 210px;
+      }
+    }
+  }
+  .viewText {
+    h3 {
+      font-family: "poppins-bold";
+      font-style: normal;
+
+      font-size: 20px;
+      line-height: 28px;
+      color: $black-color;
+      margin-bottom: 10px;
+    }
+    p {
+      font-family: "poppins-regular";
+      font-style: normal;
+
+      font-size: 16px;
+      line-height: 23px;
+      color: $black-color;
+      max-width: 415px;
+      margin-bottom: 30px;
+      display: block;
+      span {
+        color: $primary-color;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+}

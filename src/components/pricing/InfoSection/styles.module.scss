@@ -1,0 +1,218 @@
+@import "../../../styles/theme/variables";
+.gridParrent {
+  padding: 74px 62px;
+
+  @media screen and (max-width: 992px) {
+    padding: 30px 16px;
+  }
+  .content {
+    .heading {
+      font-family: "poppins-semi-bold";
+      font-style: normal;
+      //   font-weight: 500;
+      font-size: 24px;
+      line-height: 24px;
+      /* identical to box height, or 200% */
+
+      color: $black-color;
+    }
+    .contentBox {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      width: 100%;
+      flex-wrap: wrap;
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .left {
+        // flex: 0 0 55%;
+        display: flex;
+        align-items: center;
+        .button {
+          margin: 0;
+          max-width: 226px;
+          min-width: 226px;
+
+          button {
+            margin: 0;
+            min-height: 30px;
+            max-width: 100px;
+            font-size: 11px;
+            margin-left: auto;
+          }
+        }
+        .withSelect {
+          display: flex;
+          align-items: center;
+          .checkbox {
+            border: 1px solid $primary-color;
+            min-width: 26px;
+            max-width: 26px;
+            // width: 100%;
+            min-height: 26px;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+          span {
+            font-family: "poppins-semi-bold";
+            font-style: normal;
+            //   font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            /* identical to box height, or 200% */
+
+            color: $black-color;
+
+            margin-left: 10px;
+          }
+        }
+        .checkbox {
+          border: 1px solid $primary-color;
+          min-width: 26px;
+          max-width: 26px;
+          // width: 100%;
+          min-height: 26px;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        span {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          //   font-weight: 500;
+          position: relative;
+          font-size: 14px;
+          line-height: 24px;
+          max-width: 350px;
+          /* identical to box height, or 200% */
+
+          color: $black-color;
+          padding-left: 15px;
+          &::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            position: absolute;
+            left: 0;
+            top: 7px;
+          }
+
+          //
+        }
+        .selectParent {
+          margin-left: 10px;
+          .selectChild {
+            margin: 0;
+          }
+        }
+      }
+
+      .right {
+        // flex: 0 0 45%;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+        }
+        .buttonSection {
+          .button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @media screen and (max-width: 992px) {
+              justify-content: flex-start;
+            }
+          }
+          & button:first-child {
+            margin-right: 10px;
+          }
+          .button {
+            max-width: 200px;
+            min-width: 200px;
+            button {
+              margin-left: 0;
+              max-width: 60px;
+            }
+          }
+        }
+        .button {
+          margin: 0;
+          max-width: 226px;
+          min-width: 226px;
+          @media screen and (max-width: 992px) {
+            max-width: auto;
+            min-width: auto;
+          }
+          button {
+            margin: 0;
+            min-height: 30px;
+            max-width: 100px;
+            font-size: 11px;
+            margin-left: auto;
+            @media screen and (max-width: 992px) {
+              margin-left: 0;
+            }
+          }
+        }
+        p {
+          margin: 0;
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+
+          font-size: 12px;
+          line-height: 15px;
+          margin-left: 10px;
+          color: #000000;
+        }
+        .inputBox {
+          min-width: auto;
+          margin: 0;
+          min-height: 30px;
+          display: flex;
+          &.inputBox22 {
+            @media screen and (min-width: 992px) {
+              justify-content: flex-end;
+              margin-top: 5px;
+            }
+          }
+          input {
+            min-width: 62px;
+            max-width: 62px;
+            min-height: 30px;
+            max-height: 30px;
+            padding: 5px !important;
+          }
+        }
+        span {
+          font-family: "poppins-semi-bold";
+          font-style: normal;
+          //   font-weight: 500;
+          font-size: 11px;
+          line-height: 24px;
+          /* identical to box height, or 200% */
+          min-width: 93px;
+          color: #898989;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+.left2 {
+  flex-direction: column;
+  align-items: flex-start !important;
+  .idName {
+    font-family: "poppins-semi-bold";
+    font-style: normal;
+    position: relative;
+    font-size: 11px;
+    // line-height: 24px;
+    max-width: 350px;
+    color: #898989;
+    padding-left: 15px;
+  }
+}

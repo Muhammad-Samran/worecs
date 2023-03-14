@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;1,700&display=swap");
+.industrymodel_heading_h4 {
+  font-family: "poppins" !important;
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  /* color: #00CFC5 !important; */
+}
+.industrymodel_para_body {
+  font-family: "poppins" !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+}
+.industrymodel_btn_box {
+  display: flex;
+  justify-content: flex-end;
+}
+.industrymodel_btn {
+  background-color: #00cfc5 !important;
+}
+.boxHight {
+  max-height: 180px;
+  overflow: auto;
+}
+.boxHight ul {
+  padding: 0px;
+}
+.boxHight ul li {
+  list-style: inside;
+}
